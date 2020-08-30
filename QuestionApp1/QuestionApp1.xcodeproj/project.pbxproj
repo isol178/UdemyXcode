@@ -16,6 +16,12 @@
 		F97259EA24FB308F00793A8F /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F97259E724FB308F00793A8F /* maruSound.mp3 */; };
 		F97259EB24FB308F00793A8F /* batsuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F97259E824FB308F00793A8F /* batsuSound.mp3 */; };
 		F97259EC24FB308F00793A8F /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F97259E924FB308F00793A8F /* sound.mp3 */; };
+		F97259F224FB358600793A8F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97259F124FB358600793A8F /* NextViewController.swift */; };
+		F97259F424FB3B6700793A8F /* ImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97259F324FB3B6700793A8F /* ImagesModel.swift */; };
+		F97259F624FB3C6700793A8F /* ImagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97259F524FB3C6700793A8F /* ImagesList.swift */; };
+		F97259F824FB4AA200793A8F /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97259F724FB4AA200793A8F /* SoundFile.swift */; };
+		F97259FA24FB55B900793A8F /* WithoutMP3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97259F924FB55B900793A8F /* WithoutMP3.swift */; };
+		F97259FC24FB5FE600793A8F /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97259FB24FB5FE600793A8F /* ChangeColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		F97259E724FB308F00793A8F /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		F97259E824FB308F00793A8F /* batsuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = batsuSound.mp3; sourceTree = "<group>"; };
 		F97259E924FB308F00793A8F /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		F97259F124FB358600793A8F /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		F97259F324FB3B6700793A8F /* ImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModel.swift; sourceTree = "<group>"; };
+		F97259F524FB3C6700793A8F /* ImagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesList.swift; sourceTree = "<group>"; };
+		F97259F724FB4AA200793A8F /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
+		F97259F924FB55B900793A8F /* WithoutMP3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutMP3.swift; sourceTree = "<group>"; };
+		F97259FB24FB5FE600793A8F /* ChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +74,9 @@
 		F97259D224FB2EB300793A8F /* QuestionApp1 */ = {
 			isa = PBXGroup;
 			children = (
-				F97259D324FB2EB300793A8F /* AppDelegate.swift */,
-				F97259D524FB2EB300793A8F /* SceneDelegate.swift */,
-				F97259D724FB2EB300793A8F /* ViewController.swift */,
-				F97259D924FB2EB300793A8F /* Main.storyboard */,
-				F97259DC24FB2EB900793A8F /* Assets.xcassets */,
+				F97259ED24FB33F300793A8F /* Model */,
+				F97259F024FB345700793A8F /* View */,
+				F97259EF24FB341700793A8F /* Controller */,
 				F97259DE24FB2EB900793A8F /* LaunchScreen.storyboard */,
 				F97259E124FB2EB900793A8F /* Info.plist */,
 				F97259E824FB308F00793A8F /* batsuSound.mp3 */,
@@ -74,6 +84,38 @@
 				F97259E924FB308F00793A8F /* sound.mp3 */,
 			);
 			path = QuestionApp1;
+			sourceTree = "<group>";
+		};
+		F97259ED24FB33F300793A8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F97259F324FB3B6700793A8F /* ImagesModel.swift */,
+				F97259F524FB3C6700793A8F /* ImagesList.swift */,
+				F97259F724FB4AA200793A8F /* SoundFile.swift */,
+				F97259F924FB55B900793A8F /* WithoutMP3.swift */,
+				F97259FB24FB5FE600793A8F /* ChangeColor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F97259EF24FB341700793A8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F97259D324FB2EB300793A8F /* AppDelegate.swift */,
+				F97259D524FB2EB300793A8F /* SceneDelegate.swift */,
+				F97259D724FB2EB300793A8F /* ViewController.swift */,
+				F97259F124FB358600793A8F /* NextViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F97259F024FB345700793A8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F97259D924FB2EB300793A8F /* Main.storyboard */,
+				F97259DC24FB2EB900793A8F /* Assets.xcassets */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97259D824FB2EB300793A8F /* ViewController.swift in Sources */,
+				F97259F824FB4AA200793A8F /* SoundFile.swift in Sources */,
+				F97259F624FB3C6700793A8F /* ImagesList.swift in Sources */,
+				F97259F224FB358600793A8F /* NextViewController.swift in Sources */,
 				F97259D424FB2EB300793A8F /* AppDelegate.swift in Sources */,
 				F97259D624FB2EB300793A8F /* SceneDelegate.swift in Sources */,
+				F97259FC24FB5FE600793A8F /* ChangeColor.swift in Sources */,
+				F97259F424FB3B6700793A8F /* ImagesModel.swift in Sources */,
+				F97259FA24FB55B900793A8F /* WithoutMP3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
